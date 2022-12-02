@@ -53,12 +53,15 @@ function generateLettersKeys() {
 
 function chekLetter(letter) {
     letterExist = false
+    lettersGuessed = wordToGuess.length
     for (let i = 0; i < wordToGuess.length; ++i) {
         if (pickedWord[i] == letter) {
             wordToGuess[i] = letter
             letterExist = true
             updateWordToGuess()
-            ++lettersGuessed
+        }
+        if (wordToGuess[i] == "_") {
+            --lettersGuessed;
         }
     }
     if (letterExist == false) {
