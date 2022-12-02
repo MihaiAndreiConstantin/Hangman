@@ -11,21 +11,18 @@
     <div class="container">
         <div class="card-header"><center><h1 style="color: aliceblue">Hangman</h1></center></div>
         <div class="card-body" id="img"><img src="0.png" class="rounded float-start" alt="0.png"></div>
-        <center><div class="card-body" id="score" style="color: aliceblue"></div></center>
-        <br><br>
-        <center><div id="word" style="color: aliceblue"></div></center>
-        <br><br>
-        <div class="body">
-            <center>
-                <div id="keyboard" style="color: aliceblue"></div>
-                <br>
-                <div id="showletter" style="color: aliceblue"></div>
-            </center>
-        </div>
-        <br><br><br><br><br><br><br>
-        <div id="start"><center>
-            <button type="button" class="btn btn-outline-primary" onclick="startGame()">Start Game!</button></center>
-        </div>
-    </div>
-    <script src = "hangman.js"></script>
+        <center>
+            <div class="card-body" id="score" style="color: aliceblue"></div>
+            <br>
+            <div id="word" style="color: aliceblue"></div>
+            <br>
+            <div id="keys" style="color: aliceblue"></div>
+            <br>
+            <div id="showletter" style="color: aliceblue"></div>
+            <br><br>
+            <div id="level-start-buttons">
+                <button type="button" class="btn btn-outline-primary" onclick="generateLevelButtons()">Chose Category!</button>
+            </div>
+        </center>
+    <script src = "hangman2.js"></script>
 </body>
